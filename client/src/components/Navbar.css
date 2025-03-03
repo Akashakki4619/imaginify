@@ -1,0 +1,148 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Spread items to edges */
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Remove underline from links */
+  .navbar a {
+    text-decoration: none;
+  }
+  
+  .navbar-logo {
+    height: 50px;
+    width: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar-logo:hover {
+    transform: scale(1.05);
+  }
+  
+  .navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  /* User Menu */
+  .user-menu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .credits-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .credits-btn:hover {
+    transform: scale(1.05);
+  }
+  
+  .credit-icon {
+    height: 24px;
+    width: auto;
+  }
+  
+  .welcome-text {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* Profile container and dropdown */
+  .profile-container {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .profile-icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-icon:hover {
+    transform: scale(1.1);
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 110%;
+    right: 0;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 0.5rem 0;
+    min-width: 120px;
+    display: none;
+    z-index: 10;
+  }
+  
+  .dropdown-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dropdown-menu li {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: #333;
+    transition: background 0.3s ease;
+  }
+  
+  .dropdown-menu li:hover {
+    background: #f0f0f0;
+  }
+  
+  /* Show dropdown when hovering over the profile container */
+  .profile-container:hover .dropdown-menu {
+    display: block;
+  }
+  
+  /* Guest Menu */
+  .guest-menu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .navbar-link {
+    cursor: pointer;
+    font-size: 1rem;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-link:hover {
+    color: #0077ff;
+  }
+  
+  .login-btn {
+    padding: 0.5rem 1rem;
+    background-color: #0077ff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-btn:hover {
+    background-color: #005fcc;
+  }
+  

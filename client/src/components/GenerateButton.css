@@ -1,0 +1,49 @@
+/* Optional: Center the entire page content */
+body {
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .generate-button-container {
+    width: 50%;
+    height: 50vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .generate-button-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .generate-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #6200ee;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .generate-button:hover {
+    background-color: #3700b3;
+  }
+  
+  .generate-button-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+  }
+  

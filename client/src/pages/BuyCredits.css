@@ -1,0 +1,114 @@
+:root {
+    --primary-color: #6200ee;
+    --primary-color-hover: #3700b3;
+    --secondary-color: #4caf50;
+    --secondary-color-hover: #388e3c;
+    --text-color: #333;
+    --subtext-color: #666;
+    --bg-color: #f9f9f9;
+    --card-bg: #ffffff;
+    --border-color: #e0e0e0;
+    --font-family: 'Roboto', sans-serif;
+    --transition-duration: 0.3s;
+  }
+  
+  body {
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+  }
+  
+  .buy-credits {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .plans-button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color var(--transition-duration);
+    margin-bottom: 30px;
+  }
+  
+  .plans-button:hover {
+    background-color: var(--primary-color-hover);
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 40px;
+    color: var(--text-color);
+  }
+  
+  .plans-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    justify-items: center;
+  }
+  
+  .plan-card {
+    background: var(--card-bg);
+    padding: 30px 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    transition: transform var(--transition-duration), box-shadow var(--transition-duration);
+    text-align: center;
+    width: 100%;
+  }
+  
+  .plan-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+  }
+  
+  .logo-icon {
+    margin-bottom: 15px;
+  }
+  
+  .plan-id {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--text-color);
+  }
+  
+  .plan-desc {
+    font-size: 1rem;
+    color: var(--subtext-color);
+    margin-bottom: 15px;
+  }
+  
+  .plan-price {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-bottom: 25px;
+  }
+  
+  .plan-price span {
+    font-weight: 700;
+    color: var(--primary-color);
+  }
+  
+  .purchase-button {
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: none;
+    padding: 10px 25px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color var(--transition-duration);
+  }
+  
+  .purchase-button:hover {
+    background-color: var(--secondary-color-hover);
+  }
+  
